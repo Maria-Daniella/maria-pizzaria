@@ -37,3 +37,12 @@ a {
 #price {
   display: none;
 }
+@media only screen and (max-width: 485px){
+  .flex-xs-column {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px){
+  .section {
+    padding-top: 30px;
+}
