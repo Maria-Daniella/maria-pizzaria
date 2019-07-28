@@ -1,6 +1,9 @@
-#landing {
+#header {
   background-image: url(images/pizza6.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+h1 {
+   color: green;
 }
