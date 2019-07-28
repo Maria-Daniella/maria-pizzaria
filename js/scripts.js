@@ -104,52 +104,47 @@ $(document).ready(function(){
    $("#pizzacrust").append("Pizza Crust - "+pcrust);
    $("#pizzatopping").append("Pizza Toppings - "+ptopping);
    switch(psize){
+     case "mega":
+        price = 1200;
+        console.log("The price is " +price);
+      break;
     case "large":
-       price = 1200;
-       console.log(price);
+       price = 1000;
+       console.log("The price is " +price);
      break;
      case "medium":
-       price = 850;
+       price = 800;
        console.log("The price is "+price);
      break;
      case "small":
-       price = 600;
+       price = 500;
        console.log(price);
      default:
        console.log("error");
    }
-   switch(pcrust){
-      case "Crispy":
-        crust_price = 200;
-      break;
-      case "Stuffed":
-        crust_price = 250;
-      break;
-      case "Gluten-free":
-        crust_price = 180;
-      break;
-      default:
-        console.log("No price");
-   }
-   switch(ptopping){
-    case "Sausage":
+
+   switch(topping){
+    case "smoked-sausage":
+      topping_price = 100;
+    break;
+    case "vienna-sausage":
+      topping_price = 100;
+    break;
+    case "bacon":
       topping_price = 80;
     break;
-    case "Bacon":
-      topping_price = 70;
-    break;
-    case "Mushrooms":
-      topping_price = 65;
+    case "cheese":
+      topping_price = 60;
     break;
     default:
       console.log("No price");
  }
 
-   let ptotal = price + crust_price + topping_price;
-   console.log(ptotal);
-   $("#pizzatotal").append("Your Total is:  sh. "+ptotal);
+   let total = price + crust_price + topping_price;
+   console.log(total);
+   $("#pizzatotal").append("Your Total is:  sh. "+total);
 
-     var newOrder = new Getpizza(pname, psize, pcrust,ptopping,ptotal);
+     var newOrder = new Getpizza(name, size, crust,topping,total);
   console.log(newOrder);
   $(".name option:selected").val("");
   $("#size option:selected").val("");
@@ -159,9 +154,5 @@ $(document).ready(function(){
 
    event.preventDefault();
   });
-
-
-
-
 
 })
