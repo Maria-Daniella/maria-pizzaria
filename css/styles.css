@@ -37,6 +37,11 @@ h2 {
 #price {
   display: none;
 }
+#feedback {
+   background-image: url(images/pizza7.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
 @media only screen and (max-width: 485px){
   .flex-xs-column {
     flex-direction: column;
