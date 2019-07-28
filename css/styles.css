@@ -38,9 +38,11 @@ h2 {
   display: none;
 }
 #feedback {
-   background-image: url(images/pizza7.jpg);
+   background-image: url(images/pizza9.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+   padding-top: 30px;
+   padding-bottom: 30px;
 }
 @media only screen and (max-width: 485px){
   .flex-xs-column {
