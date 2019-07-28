@@ -73,7 +73,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("button.proceed").click(function(){
     $("button.proceed").hide();
-    $("div.choise").show();
+    $("div.choice").show();
   });
 
   $("button.deliver").click(function(){
@@ -94,16 +94,14 @@ $(document).ready(function(){
   });
 
   $("button.proceed").click(function(event){
-   let pname = $(".name option:selected").val();
-   let psize = $("#size option:selected").val();
-   let pcrust = $("#crust option:selected").val();
-   let ptopping = $("#topping option:selected").val();
+   let mname = $(".name option:selected").val();
+   let msize = $("#size option:selected").val();
+   let mtopping = $("#topping option:selected").val();
 
-   $("#pizzaname").append("Pizza Name - "+pname);
-   $("#pizzasize").append("Pizza size - "+psize);
-   $("#pizzacrust").append("Pizza Crust - "+pcrust);
-   $("#pizzatopping").append("Pizza Toppings - "+ptopping);
-   switch(psize){
+   $("#pizzaname").append("Pizza Name - "+mname);
+   $("#pizzasize").append("Pizza size - "+msize);
+   $("#pizzatopping").append("Pizza Toppings - "+mtopping);
+   switch(msize){
      case "mega":
         price = 1200;
         console.log("The price is " +price);
