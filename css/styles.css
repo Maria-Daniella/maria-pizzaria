@@ -1,9 +1,18 @@
 #header {
-  background-image: url(images/pizza6.jpg);
+  background-image: url(images/black.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 h1 {
-   color: green;
+   text-align: center;
+}
+#link {
+  float:right;
+
+  padding: 30px;
+}
+a {
+   box-shadow: 10px 5px 5px silver;
+   padding: 30px;
 }
