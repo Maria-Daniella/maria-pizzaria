@@ -6,7 +6,70 @@ function Getpizza( name,size,crust,topping, total ){
   this.topping = topping;
   this.total = total;
 }
+$(document).ready(function(){
+  $("#chicken-mushroom").click(function(){
+    $("#chicken-mushroom").slideDown('1500').hide('1000');
+    $("#price").show('1500');
+  });
+  $("#price").click(function(){
+    $("#price").slideUp('1500');
+    $("#chicken-mushroom").slideDown('1500');
+  });
+});
 
+$(document).ready(function(){
+  $("#chicken-tikka").click(function(){
+    $("#chicken-tikka").slideDown('1500').hide('1000');
+    $("#price").show('1500');
+  });
+  $("#price").click(function(){
+    $("#price").slideUp('1500');
+    $("#chicken-tikka").slideDown('1500');
+  });
+});
+
+$(document).ready(function(){
+  $("#barbeque").click(function(){
+    $("#barbeque").slideDown('1500').hide('1000');
+    $("#price").show('1500');
+  });
+  $("#price").click(function(){
+    $("#price").slideUp('1500');
+    $("#barbeque").slideDown('1500');
+  });
+});
+$(document).ready(function(){
+  $("#barbeque-chicken").click(function(){
+    $("#barbeque-chicken").slideDown('1500').hide('1000');
+    $("#price").show('1500');
+  });
+  $("#price").click(function(){
+    $("#price").slideUp('1500');
+    $("#barbeque-chicken").slideDown('1500');
+  });
+});
+
+$(document).ready(function(){
+  $("#hawaiian").click(function(){
+    $("#hawaiian").slideDown('1500').hide('1000');
+    $("#price").show('1500');
+  });
+  $("#price").click(function(){
+    $("#price").slideUp('1500');
+    $("#hawaiian").slideDown('1500');
+  });
+});
+
+$(document).ready(function(){
+  $("#vegetarian").click(function(){
+    $("#vegetarian").slideDown('1500').hide('1000');
+    $("#price").show('1500');
+  });
+  $("#price").click(function(){
+    $("#price").slideUp('1500');
+    $("#vegetarian").slideDown('1500');
+  });
+});
 $(document).ready(function(){
   $("button.proceed").click(function(){
     $("button.proceed").hide();
