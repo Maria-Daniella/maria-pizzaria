@@ -17,7 +17,7 @@
           <br>
           <a href="index.html">Home</a>
           <a href="#order">Order Now!</a>
-          <a href=".delivery">Delivery</a>
+          <a href="#delivery">Delivery</a>
           <a href="contact.html">Contact</a>
         </div>
         <div id ="break">
@@ -37,14 +37,17 @@
       <div id ="menu">
           <center>
             <br>
-            <h2><em>MARIA'S MENU<em></h2>
+            <h2><em><u>MARIA'S MENU</u><em></h2>
+              <p>Dig in! Have a peak at some of our scrumptuous pizza meals!</p>
             <br>
           </center>
           <div class="row">
               <div class="col-md-4">
                 <div id="chicken-mushroom">
                   <img src="images/chicken-mushroom.jpg" style="width:300px;height:300px;">
-                  <p><font size="4" color="silver">CHICKEN MUSHROOM PIZZA</font></p>
+                  <div class ="Maria">
+                    <p id="overlay" class="text"><font size="4" color="silver">CHICKEN MUSHROOM PIZZA</font></p>
+                  </div>
               </div>
               <div id="price">
                 <p><strong><center>Small - 500ksh</center></strong></p>
@@ -56,7 +59,9 @@
               <div class="col-md-4">
                 <div id="chicken-tikka">
                   <img src="images/chicken-tikka.jpg" style="width:300px;height:300px;">
-                  <p><font size="4" color="silver">CHICKEN TIKKA PIZZA</font></p>
+                  <div class ="Maria">
+                    <p id="overlay2" class="text"><font size="4" color="silver">CHICKEN TIKKA PIZZA</font></p>
+                  </div>
                </div>
                <div id="price">
                  <p><strong><center>Small - 500ksh</center></strong></p>
@@ -68,7 +73,9 @@
               <div class="col-md-4">
                 <div id="barbeque">
                   <img src="images/barbeque.jpg" style="width:300px;height:300px;">
-                  <p><font size="4" color="silver">BARBEQUE PIZZA</font></p>
+                  <div class ="Maria">
+                    <p id="overlay3" class="text"><font size="4" color="silver">BARBEQUE PIZZA</font></p>
+                  </div>
                 </div>
                 <div id="price">
                   <p><strong><center>Small - 500ksh</center></strong></p>
@@ -82,8 +89,10 @@
             <div class="col-md-4">
               <div id="hawaiian">
                 <img src="images/hawaiian.jpg" style="width:300px;height:300px;">
-                <p><font size="4" color="silver">HAWAIIAN PIZZA</font></p>
-            </div>
+                <div class ="Maria">
+                  <p id="overlay4" class="text"><font size="4" color="silver">HAWAIIAN PIZZA</font></p>
+                </div>
+             </div>
             <div id="price">
               <p><strong><center>Small - 500ksh</center></strong></p>
               <p><strong><center>Medium - 800ksh</center></strong></p>
@@ -94,7 +103,9 @@
             <div class="col-md-4">
               <div id="vegetarian">
                 <img src="images/vegetarian.jpg" style="width:300px;height:300px;">
-                <p><font size="4" color="silver">VEGETARIAN PIZZA</font></p>
+                <div class ="Maria">
+                  <p id="overlay5" class="text"><font size="4" color="silver">VEGETARIAN PIZZA</font></p>
+                </div>
              </div>
              <div id="price">
                <p><strong><center>Small - 500ksh</center></strong></p>
@@ -106,7 +117,9 @@
             <div class="col-md-4">
               <div id="barbeque-chicken">
                 <img src="images/barbeque-chicken.png" style="width:300px;height:300px;">
-                <p><font size="4" color="silver">BARBEQUE CHICKEN PIZZA</font></p>
+                <div class ="Maria">
+                  <p id="overlay6" class="text"><font size="4" color="silver">BARBEQUE CHICKEN PIZZA</font></p>
+                </div>
               </div>
               <div id="price">
                 <p><strong><center>Small - 500ksh</center></strong></p>
@@ -164,7 +177,6 @@
                     <tr>
                       <th scope="col">Name</th>
                       <th scope="col">Size</th>
-                      <th scope="col">Crust</th>
                       <th scope="col">Topping</th>
                       <th scope="col">Total</th>
                     </tr>
@@ -173,7 +185,6 @@
                     <tr>
                       <td id="pizzaname"></td>
                       <td id="pizzasize"></td>
-                      <td id="pizzacrust"></td>
                       <td id="pizzatopping"></td>
                       <td id="totals"></td>
                     </tr>
@@ -181,14 +192,13 @@
                 </table>
                 <p id="pizzatotal"></p>
                 <p id="totalbill"></p>
-                <p id="addedprice">Delivery will cost sh. 150</p>
+                <p id="addedprice"></p>
                 <p id="finallmessage"></p>
               </div>
-              <button class="btn btn-orange addPizza">Add Pizza</button>
-              <button class="btn btn-orange" id="checkout">Checkout</button>
-              <button class="btn btn-orange deliver">Home delivery?</button>
+
             </div>
-            <div class="delivery">
+            <div id ="delivery">
+              <h2><em><u>DELIVERY</u><em></h2>
                 <form action="">
                   <div class="form-group">
                     <input type="text" id="name" class="form-control mb-3" placeholder="Name">
