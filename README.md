@@ -1,10 +1,11 @@
 
-#MARIA DANIELLA WARWATHIA
+#MARIA'S PIZZERIA
 
-By MARIA DANIELLA WARWATHIA
-Description
+Author: MARIA DANIELLA WARWATHIA
+Description:
 This is a website that i created as my fourth independent project in Moringa School. This is a website for Maria's Pizzeria that uses javascript, HTML and CSS
-live website: https://maria-daniella.github.io/maria-pizzeria/
+
+Live website: https://maria-daniella.github.io/maria-pizzeria/
 
 Setup/Installation Requirements
 Any web browser e.g Mozilla Firefox or Google Chrome.
