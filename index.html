@@ -18,7 +18,7 @@
           <a href="index.html">Home</a>
           <a href="#order">Order Now!</a>
           <a href="#delivery">Delivery</a>
-          <a href="contact.html">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
         <div id ="break">
           <hr>
@@ -38,15 +38,17 @@
           <center>
             <br>
             <h2><em><u>MARIA'S MENU</u><em></h2>
-              <p>Dig in! Have a peak at some of our scrumptuous pizza meals!</p>
+              <hr>
+              <p><font size="5" color="silver">Dig in! And Have a peak at some of our scrumptuous pizza meals!</font></p>
+              <hr>
             <br>
           </center>
           <div class="row">
               <div class="col-md-4">
                 <div id="chicken-mushroom">
-                  <img src="images/chicken-mushroom.jpg" style="width:300px;height:300px;">
+                  <img src="images/chicken-mushroom.jpg" style="width:300px;height:300px;" id="pizza1">
                   <div class ="Maria">
-                    <p id="overlay" class="text"><font size="4" color="silver">CHICKEN MUSHROOM PIZZA</font></p>
+                    <p id="overlay" class="text"><font size="4" color="black">CHICKEN MUSHROOM PIZZA (click to see prices)</font></p>
                   </div>
               </div>
               <div id="price">
@@ -58,9 +60,9 @@
               </div>
               <div class="col-md-4">
                 <div id="chicken-tikka">
-                  <img src="images/chicken-tikka.jpg" style="width:300px;height:300px;">
+                  <img src="images/chicken-tikka.jpg" style="width:300px;height:300px;" id="pizza2">
                   <div class ="Maria">
-                    <p id="overlay2" class="text"><font size="4" color="silver">CHICKEN TIKKA PIZZA</font></p>
+                    <p id="overlay2" class="text"><font size="4" color="black">CHICKEN TIKKA PIZZA(click to see prices)</font></p>
                   </div>
                </div>
                <div id="price">
@@ -72,9 +74,9 @@
               </div>
               <div class="col-md-4">
                 <div id="barbeque">
-                  <img src="images/barbeque.jpg" style="width:300px;height:300px;">
+                  <img src="images/barbeque.jpg" style="width:300px;height:300px;" id="pizza3">
                   <div class ="Maria">
-                    <p id="overlay3" class="text"><font size="4" color="silver">BARBEQUE PIZZA</font></p>
+                    <p id="overlay3" class="text"><font size="4" color="black">BARBEQUE PIZZA(click to see prices)</font></p>
                   </div>
                 </div>
                 <div id="price">
@@ -88,9 +90,9 @@
         <div class="row">
             <div class="col-md-4">
               <div id="hawaiian">
-                <img src="images/hawaiian.jpg" style="width:300px;height:300px;">
+                <img src="images/hawaiian.jpg" style="width:300px;height:300px;" id="pizza4">
                 <div class ="Maria">
-                  <p id="overlay4" class="text"><font size="4" color="silver">HAWAIIAN PIZZA</font></p>
+                  <p id="overlay4" class="text"><font size="4" color="black">HAWAIIAN PIZZA(click to see prices)</font></p>
                 </div>
              </div>
             <div id="price">
@@ -102,9 +104,9 @@
             </div>
             <div class="col-md-4">
               <div id="vegetarian">
-                <img src="images/vegetarian.jpg" style="width:300px;height:300px;">
+                <img src="images/vegetarian.jpg" style="width:300px;height:300px;" id="pizza5">
                 <div class ="Maria">
-                  <p id="overlay5" class="text"><font size="4" color="silver">VEGETARIAN PIZZA</font></p>
+                  <p id="overlay5" class="text"><font size="4" color="black">VEGETARIAN PIZZA(click to see prices)</font></p>
                 </div>
              </div>
              <div id="price">
@@ -116,9 +118,9 @@
             </div>
             <div class="col-md-4">
               <div id="barbeque-chicken">
-                <img src="images/barbeque-chicken.png" style="width:300px;height:300px;">
+                <img src="images/barbeque-chicken.png" style="width:300px;height:300px;" id="pizza6">
                 <div class ="Maria">
-                  <p id="overlay6" class="text"><font size="4" color="silver">BARBEQUE CHICKEN PIZZA</font></p>
+                  <p id="overlay6" class="text"><font size="4" color="black">BARBEQUE CHICKEN PIZZA(click to see prices)</font></p>
                 </div>
               </div>
               <div id="price">
@@ -131,10 +133,11 @@
       </div>
     </div>
     <div id ="order">
+      <br>
+      <br>
       <center>
         <h2>PLACE YOUR ORDER NOW!</h2>
       </center>
-
             <form action="">
                 <label for="select">Select the Pizza of your choice:</label>
                 <select class="browser-default custom-select custom-select-md mb-3 name">
@@ -159,10 +162,18 @@
                   <option value="bacon">Bacon -- sh. 80</option>
                   <option value="cheese">Cheese -- sh. 60</option>
                 </select>
-                <br>
-              <button type="submit" class="btn btn-orange proceed">Proceed</button>
-
-
+              <br>
+              <br>
+              <label for="crust">Choose your favorite Crust!</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                    <option selected value="0">pick your crust!</option>
+                  <option value="Crispy">Crispy -- sh. 200</option>
+                  <option value="Stuffed">Stuffed -- sh. 150</option>
+                  <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                </select>
+              <button type="submit" class="btn btn-info proceed">ORDER</button>
+              <br>
+              <br>
             </form>
 
 
@@ -197,21 +208,55 @@
               </div>
 
             </div>
+            <br>
+            <br>
             <div id ="delivery">
               <h2><em><u>DELIVERY</u><em></h2>
+                <br>
+                <p><font size="5" color="silver">Kindly fill in the details below if interested in home delivery right to your door step!</font></p>
+                <center>
+                  <img src="images/delivery.jpg" style="width:300px;height:300px;">
+                </center>
                 <form action="">
                   <div class="form-group">
                     <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
                     <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                    <button class="btn btn-orange" id="final-order">Place Order</button>
+                    <button class="btn btn-info" id="final-order">Place Order</button>
                   </div>
                 </form>
               </div>
           </div>
-      </div>
-    </div>
-  </div>
+      <div id = "contact">
+        <h2><em><u>Contact Information</u><em></h2>
+            <p style="color:grey;font-size:20px;">Feel free to contact us via:</p>
+            Phone: +1 212 869-7440.
+            Phone: +254 997 789 459 (Nairobi/Kenya) +1 212 626-0500 (Global) Fax:+1 212 944-1318 (Global) Email: mariaspizzeria@gmail.com.
+            <p style="color:grey;font-size:20px;">Or pass by our offices:</p>
+            Address. Bogani East Road, empire Building 1st Floor. Nairobi, Nrb 45817- 00100.
+            Office Hours: Monday through Friday. 8:30 am – 4:30 pm.
+            <p style="color:grey;font-size:20px;">You can even hit us up on email via:</p>
+            Email: mariaspizzeria@gmail.com.
+            Mail Payments to: General Post Office. P.O. Box 30777.
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div id ="logo">
+          <img src="logo1010.jpg" alt="logo" id="logo">
+        </div>
+        <br>
+        <hr>
+      <footer>
+            <center>
+              <a href="https://twitter.com/home"><img src="images/twitter.png" alt="twitter"></a>
+              <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook">
+              <a href="https://www.skype.com/en/"><img src="images/skype.png" alt="skype"></a>
+              <a href="https://www.pinterest.com/login/"><img src="images/pinterest.png" alt="pinterest"></a>
+            </center>
+      </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
