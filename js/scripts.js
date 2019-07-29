@@ -71,6 +71,46 @@ $(document).ready(function(){
   });
 });
 $(document).ready(function(){
+  $("#pizza1").mouseover(function(){
+    $("#overlay").show();
+  }).mouseout(function(){
+    $("#overlay").hide();
+  });
+});
+$(document).ready(function(){
+  $("#pizza2").mouseover(function(){
+    $("#overlay2").show();
+  }).mouseout(function(){
+    $("#overlay2").hide();
+  });
+});
+$(document).ready(function(){
+  $("#pizza3").mouseover(function(){
+    $("#overlay3").show();
+  }).mouseout(function(){
+    $("#overlay3").hide();
+  });
+});
+$(document).ready(function(){
+  $("#pizza4").mouseover(function(){
+    $("#overlay4").show();
+  }).mouseout(function(){
+    $("#overlay4").hide();
+  });
+});
+
+$(document).ready(function(){
+  $("#pizza5").mouseover(function(){
+    $("#overlay5").show();
+  }).mouseout(function(){
+    $("#overlay5").hide();
+  });
+  $("#pizza6").mouseover(function(){
+    $("#overlay6").show();
+  }).mouseout(function(){
+    $("#overlay6").hide();
+  });
+$(document).ready(function(){
   $("button.proceed").click(function(){
     $("button.proceed").hide();
     $("div.choice").show();
@@ -104,15 +144,15 @@ $(document).ready(function(){
    switch(msize){
      case "mega":
         price = 1200;
-        console.log("The price is " +price);
+        console.log(price);
       break;
     case "large":
        price = 1000;
-       console.log("The price is " +price);
+       console.log(price);
      break;
      case "medium":
        price = 800;
-       console.log("The price is "+price);
+       console.log(price);
      break;
      case "small":
        price = 500;
@@ -121,7 +161,7 @@ $(document).ready(function(){
        console.log("error");
    }
 
-   switch(topping){
+   switch(mtopping){
     case "smoked-sausage":
       topping_price = 100;
     break;
@@ -138,11 +178,11 @@ $(document).ready(function(){
       console.log("No price");
  }
 
-   let total = price + crust_price + topping_price;
-   console.log(total);
-   $("#pizzatotal").append("Your Total is:  sh. "+total);
+   let mtotal = price + crust_price + topping_price;
+   console.log(mtotal);
+   $("#pizzatotal").append("Your Total is:  sh. "+mtotal);
 
-     var newOrder = new Getpizza(name, size, crust,topping,total);
+     var newOrder = new Getpizza(mname, msize,mtopping,mtotal);
   console.log(newOrder);
   $(".name option:selected").val("");
   $("#size option:selected").val("");
